@@ -12,21 +12,21 @@
 
 <body>
     <div id="impress">
-        <div class="step" data-x="0" data-y="0"> 
+        <div class="step box" data-x="0" data-y="0"> 
             <h1>Formation Sass</h1> 
             <p>7 décembre 2017</p> 
             <p>Companeo</p> 
             <p>Tristan Deloris</p> 
         </div> 
-        <div class="step" data-x="0" data-y="1000"> 
+        <div class="step box" data-x="0" data-y="1000"> 
              <h2>Sass c'est quoi ?</h2> 
              <p>Pré-processeur CSS</p> 
         </div>
-        <div class="step" data-x="1000" data-y="1000" data-z="-1000"> 
+        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
             <h2>Sass VS Less</h2> 
             <p>Pourquoi l'un et pas l'autre ?</p> 
         </div> 
-        <div class="step" data-x="1000" data-y="1000" data-z="-1000"> 
+        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
             <h2>Outils Sass</h2> 
             <p>Import</p> 
             <p>Nesting</p> 
@@ -35,29 +35,91 @@
             <p>Placeholders</p> 
             <p>Functions</p>
         </div>
-        <div class="step" data-x="1000" data-y="1000" data-z="-1000"> 
+        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
             <h2>Import</h2> 
             <p>base</p> 
             <p>tools</p> 
             <p>modules</p> 
             <p>elements</p> 
         </div> 
-        <div class="step" data-x="1000" data-y="1000" data-z="-1000"> 
+        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
             <h2>Nesting</h2> 
             <p>No more than 4 levels</p> 
         </div> 
-        <div class="step" data-x="1000" data-y="1000" data-z="-1000"> 
+        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
             <h2>Variables</h2> 
             <p>Permet de stocker une valeur et de l'appeler n'importe où.</p> 
             <p>Besoin de modifier la valeur à un seul endroit.</p> 
         </div> 
-        <div class="step" data-x="1000" data-y="1000" data-z="-1000"> 
+        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
             <h2>Mixins</h2> 
-            <p>Permet de rassembler un ensemble de règles.</p> 
-            <p>Créer avec @mixin</p> 
+            <p>Permet de rassembler un ensemble de règles dont les valeurs peuvent variées</p>
+            <p>Permet d'avoir moins de code à l'écran</p> 
+            <p>Créer avec @mixin <nom de la mixin></p> 
             <p>Appeler avec @include</p> 
         </div> 
-   </div>
+        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
+            <h2>Placeholders</h2> 
+            <p>Permet de rassembler un ensemble de règles dont les valeurs ne varient pas</p> 
+            <p>Créé un ensemble de selecteurs ayant les même règles</p>
+            <p>Créer avec % et le nom du placeholder</p> 
+            <p>Appeler avec @extend</p>
+        </div> 
+        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
+            <h2>Functions</h2> 
+            <p>Permet de rassembler un ensemble de règles dont les valeurs ne varient pas</p> 
+            <p>Créé un ensemble de selecteurs ayant les même règles</p>
+            <p>Créer avec % et le nom du placeholder</p> 
+            <p>Appeler avec @extend</p>
+        </div>
+        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
+            <h2>Librairie Companeo</h2> 
+            <p>Responsive Grid</p>  
+            <p>Modal</p>
+            <p>Collapse</p>
+            <p>Tab</p>
+        </div>
+        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
+            <h2>Responsive Grid</h2> 
+            <p>Basée sur 12 colonnes</p>  
+        </div>
+        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
+            <h2>Modal</h2> 
+            <p>Utilise un input checkbox</p>
+            <p>Par défault la checkbox est unchecked, lorsqu'elle est cochée la modal est activée et apparaît à l'écran.</p>
+            <p>Pour la faire disparaître il suffit de clicker sur un bouton ou de clicker n'importe où en dehors de la modal. 
+                Le bouton ainsi que l'extérieur de la modal utilise des balises <label> pour décocher la checkbox. 
+            </p>
+            <p>Du JavaScript est utilisé pour ajouter un <span>overflow:hidden</span> à l'élément <body> afin de désactiver le scroll dans la page.</p>
+        </div>
+        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
+            <h2>Collapse</h2> 
+            <p>Utilise un input checkbox</p>
+            <p>Par défault la checkbox est unchecked, lorsqu'elle est cochée l'élément se décollapse.</p>
+            <p>Malheureusement pas possible de faire interragir les éléments collapse entre eux sans JavaScript</p>
+        </div>
+        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
+            <h2>Tab</h2> 
+            <p>Utilise un input radio</p>
+            <p>Par défault l'input radio est unchecked, lorsqu'il est coché l'élément tab apparaît.</p>
+            <p>L'input radio du premier élément est coché par défault.</p>
+        </div>
+        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
+            <h2>DRY</h2> 
+            <p>Don't Repeat Yourself</p>  
+            <p></p>
+        </div>
+        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
+            <h2>Nommage des classes</h2> 
+            <p>Méthode BEM</p>  
+            <p>Block - Element - Modifier</p>
+        </div>
+        <div class="step box" data-x="-1000" data-y="2000" data-z="-1000"> 
+            <h2>Liens</h2> 
+            <p>Méthode BEM</p>  
+            <p>Block - Element - Modifier</p>
+        </div>  
+    </div>
 
    <script src="js/impress.js"></script>   
     <script>
