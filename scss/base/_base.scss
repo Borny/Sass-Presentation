@@ -1,0 +1,80 @@
+////////////////////
+//** BASE RULES **//
+////////////////////
+
+* {
+    box-sizing: border-box;
+}
+
+* {
+    &:after,
+    &:before {
+        @extend *;
+    }
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    font-family: $font-family-roboto;
+    background: $white;
+    color:$white;
+}
+
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+div, h1, h2, h3, p, span, ul, li, a, label {
+    font-weight: $font-weight-base;
+    font-size: $font-size-base;
+}
+
+button {
+    outline: 0 !important;
+    border: 0;
+    padding: 0;
+}
+
+////////////
+// CLASSES
+////////////
+.hidden {
+    display: none !important;
+}
+
+.configuration { // TODO delete this rule and add .hidden next to 'configuration' in the DOM
+    display: none;
+}
+
+.bold {
+    font-weight: $font-weight-bold;
+}
+
+.bolder {
+    font-weight: $font-weight-bolder;
+}
+
+.show-sm {
+    display: none;
+    @media(min-width: $screen-sm) {
+        display: block;
+    }
+}

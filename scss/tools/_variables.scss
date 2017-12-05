@@ -1,15 +1,51 @@
-/////////////////////
-// Font
-/////////////////////
-@import url(//fonts.googleapis.com/css?family=Roboto:700,400,500,300);
+////////////////
+// FONT FAMILY
+////////////////
 $font-family-roboto: 'Roboto', Arial, sans-serif, serif, Helvetica;
 
-/////////////////////
-// Colors
-/////////////////////
-$white: #fff;
+//////////
+// COLORS
+//////////
+$white: #FFF;
 $black: #000;
 
+$orange-light: #F9A33D;
+$orange: #F89827; //OFFICIAL COMPANEO ORANGE
+$orange-dark: #EA8A2A;
+
+$red: #FC5E71;
+
+$gray-light-8: #F7F7F7;
+$gray-light-7: #F2F2F2;
+$gray-light-6: #E8E8E8;
+$gray-light-5: #DDD;
+$gray-light-4: #D6D6D6;
+$gray-light-3: #AFAFAF;
+$gray-light-2: #9E9E9E;
+$gray-light-1: #787878;
+$gray: #444;
+
+$green-light-3: #2EE8B7;
+$green-light-2: #27E2B6;
+$green-light-1: #26D3A5;
+$green-api: #0CC39D;
+
+$blue-green: #06b2c1;
+
+$blue-light-5: #72E5F7;
+$blue-light-4: #58DBF9;
+$blue-light-3: #52CEE2;
+$blue-light-1: #14BAED;
+$blue-light: #00B5FE;
+$blue: #00A3E4; //OFFICIAL COMPANEO BLUE
+$blue-dark-1: #0194CE;
+$blue-dark-2: #007FB1;
+$blue-dark-3: #02649B;
+$blue-dark-4: #05587C;
+
+////////////
+// OPACITY
+////////////
 $white-opacity7: rgba(255, 255, 255, .7);
 $white-opacity5: rgba(255, 255, 255, .5);
 $white-opacity3: rgba(255, 255, 255, .3);
@@ -24,59 +60,84 @@ $black-opacity3: rgba(0, 0, 0, .3);
 $black-opacity25: rgba(0, 0, 0, .25);
 $black-opacity2: rgba(0, 0, 0, .2);
 $black-opacity15: rgba(0, 0, 0, .15);
+$black-opacity1: rgba(0, 0, 0, .1);
 
-$orange-light: #F9A33D;
-$orange: #F89827; //OFFICIAL COMPANEO ORANGE
-$orange-dark: #EA8A2A;
+////////////////////
+// LINEAR GRADIENT
+////////////////////
+$smartGradient-api: linear-gradient(-35deg, $green-api, $blue);
 
-$red: #FC5E71;
+///////////////
+// BOX SHADOW
+///////////////
+$shadowBlack4: 0 1px 1px 0 $black-opacity4;
+$shadowBlack3: 0 1px 2px 0 $black-opacity3;
+$shadowBlack25: 0 2px 3px 0 $black-opacity25;
+$shadowBlack2: 0 1px 1px 0 $black-opacity2;
+$shadowBlack15: 0 3px 6px 0 $black-opacity15;
+$shadowBlack16: 0 2px 6px 3px $black-opacity15;
 
-$gray-light8: #F7F7F7;
-$gray-light7: #F2F2F2;
-$gray-light6: #E8E8E8;
-$gray-light5: #DDD;
-$gray-light4: #D6D6D6;
-$gray-light3: #AFAFAF;
-$gray-light2: #9E9E9E;
-$gray-light1: #787878;
-$gray: #444;
-$gray-lighter-two: #DDDDDD;
+////////////////
+// TEXT SHADOW
+////////////////
+$textShadowBlack4: 0 2px 3px $black-opacity25;
 
-$green-light3: #2EE8B7;
-$green-light2: #27E2B6;
-$green-light1: #26D3A5;
-$green: #0CC39D;
+////////////////
+// FONT WEIGHT
+////////////////
+$font-weight-light: 300;
+$font-weight-base: 400;
+$font-weight-bold: 500;
+$font-weight-bolder: 700;
 
-$green-gradient: #92FE9D;
+//////////////
+// FONT SIZE
+//////////////
+$font-size-xxs: 11px;
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-base: 15px;
+$font-size-md: 16px;
+$font-size-ml: 18px;
+$font-size-lg: 21px;
+$font-size-xl: 24px;
+$font-size-xxl: 30px;
+$font-size-xxxl: 32px;
 
-$blue-green: #06b2c1;
+////////////
+// Z-INDEX
+////////////
+$zindex-footer: 100;
+$zindex-progressBar: 150;
+$zindex-btnContainerDesktop: 250;
+$zindex-halo: 300;
+$zindex-btn: 350;
+$zindex-btnImg: 400;
+$zindex-scrollArrow: 450;
+$zindex_disconnected: 660;
+$zindex-loader: 650;
+$zindex-cgu: 500;
+$zindex-btnContainerMobile: 500;
+$zindex-geoText: 400;
+$zindex-labelTop: 600;
+$zindex-modalApi: 900;
+$zindex-modalApiDialog: 950;
+$zindex-infoLayout: 1000;
+$zindex-headerFixed: 1050;
+$zindex-infoLayoutBody: 1100;
+$zindex-infoLayoutHeader: 1150;
+$zindex-cookie-widget: 1200;
+$zindex-modal-show: 1300;
 
-$blue-light4: #72E5F7;
-$blue-light3: #58DBF9;
-$blue-light2: #52CEE2;
-$blue-light1: #14BAED;
-$blue-light: #00B5FE;
-$blue: #00A3E4; //OFFICIAL COMPANEO BLUE
-$blue-dark1: #0194CE;
-$blue-dark2: #007FB1;
-$blue-dark3: #02649B;
-$blue-dark4: #05587C;
-
-/////////////////////
-// Screen sizes
-/////////////////////
+/////////////////
+// SCREEN SIZES
+/////////////////
 $screen-xs: 480px;
 $screen-sm: 768px;
 $screen-md: 992px;
 $screen-lg: 1200px;
 
-/////////////////////
-// Z-index
-/////////////////////
-$zindex-modal: 1000;
-$zindex-modal-dialog: 1100;
-
-/////////////////////
-// Columns
-/////////////////////
-$columns: 12 !default;
+////////////
+// COLUMNS
+////////////
+$columns : 12 !default;

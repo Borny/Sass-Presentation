@@ -1,11 +1,12 @@
-@import "tools/variables";
+// TOOLS
+@import 'tools/variables';
+@import 'tools/mixins';
+@import 'tools/placeholders';
+@import 'tools/grid';
 
-
-body{
-    background: $white;
-    color:$white;
-    padding: 15px;
-}
+// BASE
+@import 'base/normalize';
+@import 'base/base';
 
 .box{
     width: 800px;
@@ -15,4 +16,8 @@ body{
     box-shadow: 0 0 1px 1px black;
     padding: 15px;
     text-align: center;
+}
+
+.upside-down{
+    transform: rotate(180deg);
 }
