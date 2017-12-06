@@ -11,3 +11,36 @@
     transform-style: preserve-3d;
 }
 
+//CENTER ON X AND Y AXIS
+@mixin centered($position,$hor: true, $ver: true) {
+    position: $position;
+    @if ($hor and $ver) {
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    } @else if ($hor) {
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    } @else if ($ver) {
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+    }
+}
+
+// DISPLAY INLINE-BLOCK
+@mixin inlineBlock($position){
+    display: inline-block;
+    vertical-align: $position;
+}

@@ -1,0 +1,42 @@
+.title{
+    svg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        fill: $blue;
+    }
+    .footer{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 15px;
+        p{
+            @include inlineBlock(top);
+            padding: 9px 15px;
+            height: 50px;
+            border-left: 1px solid $blue;
+        }
+    }
+}
+
+.step{
+    svg{
+        fill: $blue;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .box-header{
+        padding: 0 20px 20px;
+        h2{
+            font-size: 2em;
+            padding: 20px 0 0;        
+        }
+        p{
+            padding: 20px 0 0;
+            text-align: right;
+            color: $white;
+            font-weight: bolder;
+        }
+    }
+}

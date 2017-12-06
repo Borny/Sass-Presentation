@@ -12,86 +12,114 @@
 
 <body>
     <div id="impress">
-        <div class="step box" data-x="0" data-y="0"> 
-            <h1>Formation Sass</h1> 
-            <p>Companeo</p> 
-            <p>7 décembre 2017</p> 
-            <p>Tristan Deloris</p> 
+        <div class="title step box" data-x="0" data-y="0"> 
+            <svg width="1200" height="1000">
+                <polygon points="0,800 1200,0 0,0" class="triangle">
+            </svg>
+            <h1>
+                Formation
+                <span>Sass</span>
+            </h1>
+            <div class="footer">
+                <p>Companeo<br>
+                7 décembre 2017</p> 
+                <p>Tristan Deloris</p> 
+            </div>
+        </div>
+        <div class="step box" data-x="0" data-y="1500" data-rotate="90"> 
+            <svg width="800" height="100">
+                <polygon points="800,100 800,0 0,0" class="triangle">
+            </svg>                 
+            <div class="box-header row">
+                <h2 class="col-md-9">Sass c'est quoi <span class="blue">?</span></h2>
+                <p class="col-md-3">Formation Sass</p>             
+            </div> 
+            <div>
+                <p>Pré-processeur CSS</p> 
+                <p>Permet d'écrire du code plus lisible et plus facile à maintenir</p> 
+                <p>Plus facile à débugger</p> 
+                <p>Fait gagner du temps</p> 
+                <p>Le build permet de voir les erreurs tout de suite</p> 
+                <p>Compatible CSS : permet d'écrire du code CSS ou d'ajouter une librairie CSS</p>   
+                <p>Permet de garder son code "DRY" = Don't Repeat Yourself</p>           
+            </div>
         </div>
         <div class="step box" data-x="1000" data-y="2000" data-z="-1000"> 
-            <h2>Sass VS Less</h2> 
+            <svg width="800" height="100">
+                <polygon points="800,100 800,0 0,0" class="triangle">
+            </svg>                 
+            <div class="box-header row">
+                <h2 class="col-md-9">Sass <span class="blue">VS</span> Less</h2>
+                <p class="col-md-3">Formation Sass</p>             
+            </div>
             <p>Pourquoi l'un et pas l'autre ?</p> 
-            <p>Parcequ'on l'utilise dans toutes les nouvelles applications : front, extranet, smart api, CRM...</p>
             <p>Plus rapide à compiler</p>             
             <p>Bootstrap l'utilise</p>
-            <p>La règle @extend</p> 
+            <p>Meilleur logique de syntaxe</p>
+            <p>La règle @extend</p>
+            <p>Les boucles et conditions</p>
+            <p>Il est utilisé dans toutes les nouvelles applications Companeo: front, extranet, smart api, CRM...</p>
         </div>  
-        <div class="step box" data-x="0" data-y="1000" data-rotate="90"> 
-             <h2>Sass c'est quoi ?</h2> 
-             <p>Pré-processeur CSS</p> 
-             <p>Permet d'écrire du code plus lisible et plus facile à maintenir</p> 
-             <p>Plus facile à débugger</p> 
-             <p>Fait gagner du temps</p> 
-             <p>Le build permet de voir les erreurs tout de suite</p> 
-             <p>Compatible CSS : permet d'écrire du code CSS ou d'ajouter une librairie CSS</p>   
-             <p>Permet de garder son code "DRY" = Don't Repeat Yourself</p>           
-        </div>
-        <div class="step box upside-down" data-x="1000" data-y="1000" data-z="-1000"  data-rotate="180"> 
+        <div class="step box upside-down" data-x="1000" data-y="3000" data-z="-1000"> 
             <h2>Outils Sass</h2> 
             <p>Import</p> 
             <p>Nesting</p> 
             <p>Variables</p>
             <p>Mixins</p>
-            <p>@Extend</p>
-            <p>Placeholders</p> 
+            <p>Extend</p>
+            <p>Placeholders</p>
+            <p>Autres...</p> 
             <p>Functions</p>
+            <p>Conditions</p>
+            <p>Boucles</p>
         </div>
-        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
+        <div class="step box upside-down" data-x="2000" data-y="3000" data-z="-1500"> 
             <h2>Import</h2>
             <p>Diviser le code en dossiers et fichiers</p>            
-            <p>base : les règles essentielles à l'application</p> 
+            <p>base : les règles essentielles et communes à l'application</p> 
             <p>tools : les outils dont on se sert</p> 
             <p>modules : tout ce qui peut être réutilisé et déplacé</p>
-            <p>composents : toutes les parties distinctes de l'application</p>
+            <p>components : toutes les parties distinctes de l'application</p>
         </div> 
-        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
+        <div class="step box" data-x="3000" data-y="3000" data-z="-2000">                 
             <h2>Nesting</h2> 
             <p>No more than 4 levels</p> 
-        </div> 
-        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
+            <p>Permet d'imbriquer les media queries</p>
+        </div>
+        <!-- <div class="step box" data-x="4000" data-y="3000" data-z="-2500">                
             <h2>Variables</h2> 
-            <p>Permet de stocker une valeur et de l'appeler n'importe où.</p> 
-            <p>Besoin de modifier la valeur à un seul endroit.</p> 
+            <p>Permet de stocker une valeur et de l'appeler n'importe où</p> 
+            <p>Besoin de modifier la valeur à un seul endroit</p> 
         </div> 
-        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
+        <div class="step box" data-x="5000" data-y="3000" data-z="-3000">                
             <h2>Mixins</h2> 
             <p>Permet de rassembler un ensemble de règles dont les valeurs peuvent variées</p>
             <p>Permet d'avoir moins de code à l'écran</p> 
             <p>Créer avec @mixin <nom de la mixin></p> 
             <p>Appeler avec @include</p> 
         </div> 
-        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
+        <div class="step box" data-x="6000" data-y="3000" data-z="-3500"> 
             <h2>Placeholders</h2> 
             <p>Permet de rassembler un ensemble de règles dont les valeurs ne varient pas</p> 
             <p>Créé un ensemble de selecteurs ayant les même règles</p>
             <p>Créer avec % et le nom du placeholder</p> 
             <p>Appeler avec @extend</p>
         </div> 
-        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
+        <div class="step box" data-x="700" data-y="3000" data-z="-4000"> 
             <h2>Functions</h2> 
             <p>Permet de rassembler un ensemble de règles dont les valeurs ne varient pas</p> 
             <p>Créé un ensemble de selecteurs ayant les même règles</p>
             <p>Créer avec % et le nom du placeholder</p> 
             <p>Appeler avec @extend</p>
-        </div>
-        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
+        </div> -->
+        <!-- <div class="step box" data-x="1000" data-y="4000" data-z="-1000"> 
             <h2>Librairie Companeo</h2> 
             <p>Responsive Grid</p>  
             <p>Modal</p>
             <p>Collapse</p>
             <p>Tab</p>
         </div>
-        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
+        <div class="step box" data-x="" data-y="3000" data-z="-1000"> 
             <h2>Responsive Grid</h2> 
             <p>Basée sur 12 colonnes</p>  
         </div>
@@ -138,7 +166,7 @@
             <p>Sass :</p>
             <a href="http://sass-lang.com/">Sass site officiel</a>
             <a href="https://www.codecademy.com/learn/learn-sass">Code Academy</a>
-        </div>  
+        </div>   -->
     </div>
 
    <script src="js/impress.js"></script>   
