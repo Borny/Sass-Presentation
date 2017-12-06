@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,7 +13,7 @@
 
 <body>
     <div id="impress">
-        <div class="title step box" data-x="0" data-y="0"> 
+        <div class="title step box" data-x="0" data-y="0">
             <svg width="1200" height="1000">
                 <polygon points="0,800 1200,0 0,0" class="triangle">
             </svg>
@@ -21,158 +22,662 @@
                 <span>Sass</span>
             </h1>
             <div class="footer">
-                <p>Companeo<br>
-                7 décembre 2017</p> 
-                <p>Tristan Deloris</p> 
+                <p>Companeo
+                    <br> 7 décembre 2017</p>
+                <p>Tristan Deloris</p>
             </div>
         </div>
-        <div class="step box" data-x="0" data-y="1500" data-rotate="90"> 
+        <div class="step box" data-x="0" data-y="1500" data-rotate="90">
             <svg width="800" height="100">
                 <polygon points="800,100 800,0 0,0" class="triangle">
-            </svg>                 
+            </svg>
             <div class="box-header row">
-                <h2 class="col-md-9">Sass c'est quoi <span class="blue">?</span></h2>
-                <p class="col-md-3">Formation Sass</p>             
-            </div> 
-            <div>
-                <p>Pré-processeur CSS</p> 
-                <p>Permet d'écrire du code plus lisible et plus facile à maintenir</p> 
-                <p>Plus facile à débugger</p> 
-                <p>Fait gagner du temps</p> 
-                <p>Le build permet de voir les erreurs tout de suite</p> 
-                <p>Compatible CSS : permet d'écrire du code CSS ou d'ajouter une librairie CSS</p>   
-                <p>Permet de garder son code "DRY" = Don't Repeat Yourself</p>           
+                <h2 class="col-md-9">Sass c'est quoi
+                    <span class="blue">?</span>
+                </h2>
+                <p class="col-md-3">Formation Sass</p>
+            </div>
+            <div class="box-body">
+                <p>Pré-processeur CSS</p>
+                <p>Permet d'écrire du code plus lisible et plus facile à maintenir</p>
+                <p>Plus facile à débugger</p>
+                <p>Fait gagner du temps</p>
+                <p>Le build permet de voir les erreurs tout de suite</p>
+                <p>Compatible CSS : permet d'écrire du code CSS ou d'ajouter une librairie CSS</p>
+                <p>Permet de garder son code "DRY" = Don't Repeat Yourself</p>
             </div>
         </div>
-        <div class="step box" data-x="1000" data-y="2000" data-z="-1000"> 
+        <div class="step box" data-x="1000" data-y="2000" data-z="-1000">
             <svg width="800" height="100">
                 <polygon points="800,100 800,0 0,0" class="triangle">
-            </svg>                 
+            </svg>
             <div class="box-header row">
-                <h2 class="col-md-9">Sass <span class="blue">VS</span> Less</h2>
-                <p class="col-md-3">Formation Sass</p>             
+                <h2 class="col-md-9">Sass
+                    <span class="blue">VS</span> Less</h2>
+                <p class="col-md-3">Formation Sass</p>
             </div>
-            <p>Pourquoi l'un et pas l'autre ?</p> 
-            <p>Plus rapide à compiler</p>             
-            <p>Bootstrap l'utilise</p>
-            <p>Meilleur logique de syntaxe</p>
-            <p>La règle @extend</p>
-            <p>Les boucles et conditions</p>
-            <p>Il est utilisé dans toutes les nouvelles applications Companeo: front, extranet, smart api, CRM...</p>
-        </div>  
-        <div class="step box upside-down" data-x="1000" data-y="3000" data-z="-1000"> 
-            <h2>Outils Sass</h2> 
-            <p>Import</p> 
-            <p>Nesting</p> 
-            <p>Variables</p>
-            <p>Mixins</p>
-            <p>Extend</p>
-            <p>Placeholders</p>
-            <p>Autres...</p> 
-            <p>Functions</p>
-            <p>Conditions</p>
-            <p>Boucles</p>
+            <div class="box-body">
+                <p class="bolder">Pourquoi l'un et pas l'autre
+                    <span class="blue">?</span>
+                </p>
+                <p>Plus rapide à compiler</p>
+                <p>Plus de support</p>
+                <p>Meilleur logique de syntaxe</p>
+                <p>La règle @extend</p>
+                <p>Fonctions natives</p>
+                <p>Les boucles et conditions</p>
+                <p>Bootstrap</p>
+                <p>Il est utilisé dans toutes les nouvelles applications Companeo: front, extranet, smart api, CRM...</p>
+            </div>
         </div>
-        <div class="step box upside-down" data-x="2000" data-y="3000" data-z="-1500"> 
-            <h2>Import</h2>
-            <p>Diviser le code en dossiers et fichiers</p>            
-            <p>base : les règles essentielles et communes à l'application</p> 
-            <p>tools : les outils dont on se sert</p> 
-            <p>modules : tout ce qui peut être réutilisé et déplacé</p>
-            <p>components : toutes les parties distinctes de l'application</p>
-        </div> 
-        <div class="step box" data-x="3000" data-y="3000" data-z="-2000">                 
-            <h2>Nesting</h2> 
-            <p>No more than 4 levels</p> 
-            <p>Permet d'imbriquer les media queries</p>
+        <div class="step box" data-x="1000" data-y="3000" data-z="-1000">
+            <svg width="800" height="100">
+                <polygon points="800,100 800,0 0,0" class="triangle">
+            </svg>
+            <div class="box-header row">
+                <h2 class="col-md-9">Outils Sass</h2>
+                <p class="col-md-3">Formation Sass</p>
+            </div>
+            <div class="box-body">
+
+                <p>Import</p>
+                <p>Nesting</p>
+                <p>Variables</p>
+                <p>Mixins</p>
+                <p>Placeholders</p>
+                <p>Extend</p>
+
+                <input id="collapse_tab" class="collapse-input" type="checkbox">
+                <label class="collapse-btn" for="collapse_tab">
+                    <div class="collapse-btn_content">Autres...</div>
+                    <div class="iconPlus">
+                        <span class="plus"></span>
+                        <span class="minus"></span>
+                    </div>
+                </label>
+                <div class="collapse-content">
+                    <p>Functions</p>
+                    <p>Conditions</p>
+                    <p>Boucles</p>
+                </div>
+            </div>
         </div>
-        <!-- <div class="step box" data-x="4000" data-y="3000" data-z="-2500">                
-            <h2>Variables</h2> 
-            <p>Permet de stocker une valeur et de l'appeler n'importe où</p> 
-            <p>Besoin de modifier la valeur à un seul endroit</p> 
-        </div> 
-        <div class="step box" data-x="5000" data-y="3000" data-z="-3000">                
-            <h2>Mixins</h2> 
-            <p>Permet de rassembler un ensemble de règles dont les valeurs peuvent variées</p>
-            <p>Permet d'avoir moins de code à l'écran</p> 
-            <p>Créer avec @mixin <nom de la mixin></p> 
-            <p>Appeler avec @include</p> 
-        </div> 
-        <div class="step box" data-x="6000" data-y="3000" data-z="-3500"> 
-            <h2>Placeholders</h2> 
-            <p>Permet de rassembler un ensemble de règles dont les valeurs ne varient pas</p> 
-            <p>Créé un ensemble de selecteurs ayant les même règles</p>
-            <p>Créer avec % et le nom du placeholder</p> 
-            <p>Appeler avec @extend</p>
-        </div> 
-        <div class="step box" data-x="700" data-y="3000" data-z="-4000"> 
-            <h2>Functions</h2> 
-            <p>Permet de rassembler un ensemble de règles dont les valeurs ne varient pas</p> 
-            <p>Créé un ensemble de selecteurs ayant les même règles</p>
-            <p>Créer avec % et le nom du placeholder</p> 
-            <p>Appeler avec @extend</p>
-        </div> -->
-        <!-- <div class="step box" data-x="1000" data-y="4000" data-z="-1000"> 
-            <h2>Librairie Companeo</h2> 
-            <p>Responsive Grid</p>  
+
+        <div class="step box" data-x="2500" data-y="3000" data-z="-1500" data-rotate-y="10">
+            <svg width="800" height="100">
+                <polygon points="800,100 800,0 0,0" class="triangle">
+            </svg>
+            <div class="box-header row">
+                <h2 class="col-md-9">
+                    <span class="blue">@</span>import</h2>
+                <p class="col-md-3">Formation Sass</p>
+            </div>
+            <div class="box-body">
+                <p>Diviser le code en dossiers et fichiers</p>
+                <p>Plus lisible</p>
+                <p>Dossier mieux rangé</p>
+
+                <div class="box-code">
+                    <ul>
+                        <li class="blue">// TOOLS</li>
+                        <li>@import 'tools/variables';</li>
+                        <li>@import 'tools/mixins';</li>
+                        <li>@import 'tools/placeholders';</li>
+                        <li>@import 'tools/grid';</li>
+                        <br>
+                        <li class="blue">// BASE</li>
+                        </li>
+                        <li>@import 'base/normalize';</li>
+                        <li>@import 'base/base';</li>
+                        <br>
+                        <li class="blue">// MODULES</li>
+                        <li>@import 'modules/buttons';</li>
+                        <li>@import 'modules/input';</li>
+                        <li>@import 'modules/loader';</li>
+                        <br>
+                        <li class="blue">// COMPONENTS</li>
+                        <li>@import 'components/header';</li>
+                        <li>@import 'components/headline';</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="step box" data-x="4000" data-y="3000" data-z="-2000" data-rotate-y="20">
+            <svg width="800" height="100">
+                <polygon points="800,100 800,0 0,0" class="triangle">
+            </svg>
+            <div class="box-header row">
+                <h2 class="col-md-9">Nesting</h2>
+                <p class="col-md-3">Formation Sass</p>
+            </div>
+            <div class="box-body row">
+                <p>Imbriquation des sélecteurs</p>
+                <p>Pas plus de 4 niveaux</p>
+                <p>Permet d'imbriquer les media queries</p>
+
+                <div class="col-md-6">
+
+                    <div class="box-code">
+
+                        <p class="blue">// Code CSS</p>
+
+                        <code>
+                            body{
+                            <span class="padding20">height: 100%;</span>
+                            <span class="padding20"> background: $white; </span>
+                            <span>}</span>
+                        </code>
+                        <code>
+                            body .header{
+                            <span class="padding20">width: 100%;</span>
+                            <span class="padding20"> padding: 15px;</span>
+                            <span>}</span>
+                        </code>
+                        <code>
+                            body .header .content{
+                            <span class="padding20">font-size: 3em;</span>
+                            <span class="padding20">color: $gray;</span>
+                            <span class="padding20"> font-weight: bolder; </span>
+                            <span>}</span>
+                        </code>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="box-code">
+
+                        <p class="blue">// Code Imbriqué</p>
+
+                        <code>
+                            body{
+                            <span class="padding20">height: 100%;</span>
+                            <span class="padding20"> background: $white; </span>
+                            <span class="padding20"> .header{</span>
+                            <span class="padding40">width: 100%;</span>
+                            <span class="padding40"> padding: 15px;</span>
+                            <span class="padding40">.content{</span>
+                            <span class="padding60">font-size: 3em;</span>
+                            <span class="padding60">color: $gray;</span>
+                            <span class="padding60"> font-weight: bolder; </span>
+                            <span class="padding40">}</span>
+                            <span class="padding20">}</span>
+                            <span>}</span>
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="step box" data-x="5500" data-y="3000" data-z="-2500" data-rotate-y="30">
+            <svg width="800" height="100">
+                <polygon points="800,100 800,0 0,0" class="triangle">
+            </svg>
+            <div class="box-header row">
+                <h2 class="col-md-9">
+                    <span class="blue">$</span>variables</h2>
+                <p class="col-md-3">Formation Sass</p>
+            </div>
+            <div class="box-body">
+                <p>Permet de stocker une valeur et de l'appeler n'importe où</p>
+                <p>Besoin de modifier la valeur à un seul endroit</p>
+
+                <div class="box-code col-md-8">
+                    <code>
+                        $blue: #A3EAB;
+                        <br> $font-size: 2em;
+                    </code>
+                    <code>
+                        body{
+                        <span class="padding20">height: 100%;</span>
+                        <span class="padding20"> background:
+                            <i class="blue">$blue</i>;</span>
+                        <span class="padding20"> .header{</span>
+                        <span class="padding40">width: 100%;</span>
+                        <span class="padding40"> padding: 15px;</span>
+                        <span class="padding40">.content{</span>
+                        <span class="padding60">font-size: 3em;</span>
+                        <span class="padding60">color:
+                            <i class="blue">$blue</i>;</span>
+                        <span class="padding60"> font-size:
+                            <i class="blue">$font-size</i>;</span>
+                        <span class="padding40">}</span>
+                        <span class="padding20">}</span>
+                        <span>}</span>
+                    </code>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="step box" data-x="7000" data-y="3000" data-z="-3000" data-rotate-y="20">
+            <svg width="800" height="100">
+                <polygon points="800,100 800,0 0,0" class="triangle">
+            </svg>
+            <div class="box-header row">
+                <h2 class="col-md-9">
+                    <span class="blue">@</span>mixins</h2>
+                <p class="col-md-3">Formation Sass</p>
+            </div>
+            <div class="box-body">
+                <p>Permet de rassembler un ensemble de règles réutilisables</p>
+                <p>Peut utiliser des paramètres</p>
+                <p>Permet d'avoir moins de code à l'écran</p>
+                <p>Créer avec @mixin
+                    <nom de la mixin>
+                </p>
+                <p>Appeler avec @include</p>
+
+                <div class="box-code col-md-8">
+
+                    <p class="blue">// Création de la mixin</p>
+
+                    <code>
+                        @mixin inlineBlock($position){
+                        <span class="padding20">display: inline-block;</span>
+                        <span class="padding20">vertical-align: $position;</span>
+                        }
+                    </code>
+
+                    <p class="blue">// Appel de la mixin</p>
+
+                    <code>
+
+                        button{
+                        <span class="padding20">@include inlineBlock(middle);</span>
+                        }
+
+                    </code>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="step box" data-x="8500" data-y="3000" data-z="-3000" data-rotate-y="10">
+            <svg width="800" height="100">
+                <polygon points="800,100 800,0 0,0" class="triangle">
+            </svg>
+            <div class="box-header row">
+                <h2 class="col-md-9">
+                    <span class="blue">%</span>placeholders</h2>
+                <p class="col-md-3">Formation Sass</p>
+            </div>
+            <div class="box-body">
+                <p>Permet de rassembler un ensemble de règles dont les valeurs ne varient pas</p>
+                <p>Créer avec % et le nom du placeholder</p>
+                <p>Appeler avec @extend</p>
+
+                <div class="box-code col-md-8">
+
+                    <p class="blue">// Création du placeholder</p>
+
+                    <code>
+                        %transition {
+                        <span class="padding20">-webkit-transition: 0.4s;</span>
+                        <span class="padding20">-moz-transition: 0.4s;</span>
+                        <span class="padding20">-ms-transition: 0.4s;</span>
+                        <span class="padding20">-o-transition: 0.4s;</span>
+                        <span class="padding20">transition: 0.4s;</span>
+                        <span class="padding20">-webkit-animation-timing-function: linear;</span>
+                        <span class="padding20">-moz-animation-timing-function: linear;</span>
+                        <span class="padding20">-ms-animation-timing-function: linear;</span>
+                        <span class="padding20">-o-animation-timing-function: linear;</span>
+                        <span class="padding20">animation-timing-function: linear;</span>
+                        }
+                    </code>
+
+                    <p class="blue">// Appel du placeholder</p>
+
+                    <code>
+                        button{
+                        <span class="padding20">@extend %transition;</span>
+                        }
+                    </code>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="step box" data-x="10000" data-y="3000" data-z="-3000" data-rotate-y="0">
+            <svg width="800" height="100">
+                <polygon points="800,100 800,0 0,0" class="triangle">
+            </svg>
+            <div class="box-header row">
+                <h2 class="col-md-9">
+                    <span class="blue">@</span>extend</h2>
+                <p class="col-md-3">Formation Sass</p>
+            </div>
+            <div class="box-body">
+                <p>Permet de dupliquer des règles existantes</p>
+                <p>Créer avec @extend et le nom du sélecteurs</p>
+
+                <div class="col-md-6">
+
+
+                    <div class="box-code">
+
+                        <p class="blue">// SCSS</p>
+
+                        <code>
+                            header{
+                            <span class="padding20">height: 100%;</span>
+                            <span class="padding20"> background: $blue;</span>
+                            }
+                        </code>
+                        <code>
+                            footer{
+                            <span class="padding20"> @extend
+                                <i class="blue">header</i>;</span>
+                            <span class="padding20">width: 100%;</span>
+                            <span class="padding20"> padding: 15px;</span>
+                            }
+                        </code>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+
+
+                    <div class="box-code">
+
+                        <p class="blue">// CSS</p>
+
+                        <code>
+                            header{
+                            <span class="padding20">height: 100%;</span>
+                            <span class="padding20"> background: $blue;</span>
+                            }
+                        </code>
+                        <code>
+                            footer{
+                            <span class="padding20">height: 100%;</span>
+                            <span class="padding20"> background: $blue;</span>
+                            <span class="padding20">width: 100%;</span>
+                            <span class="padding20"> padding: 15px;</span>
+                            }
+                        </code>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- COMPANEO LIBRARY -->
+
+        <div class="title step box" data-x="1000" data-y="4000" data-z="-1000">
+            <svg width="1200" height="1000">
+                <polygon points="0,800 1200,0 0,0" class="triangle">
+            </svg>
+            <h1>
+                Librairie
+                <span>Companeo</span>
+            </h1>
+            <p>Responsive Grid</p>
             <p>Modal</p>
             <p>Collapse</p>
             <p>Tab</p>
         </div>
-        <div class="step box" data-x="" data-y="3000" data-z="-1000"> 
-            <h2>Responsive Grid</h2> 
-            <p>Basée sur 12 colonnes</p>  
+
+        <div class="step box" data-x="1000" data-y="5000" data-z="-2000">
+            <svg width="800" height="100">
+                <polygon points="800,100 800,0 0,0" class="triangle">
+            </svg>
+            <div class="box-header row">
+                <h2 class="col-md-9">Responsive Grid</h2>
+                <p class="col-md-3">Formation Sass</p>
+            </div>
+            <div class="box-body">
+                <p>Basée sur 12 colonnes</p>
+
+                <div class="row">
+                    <div class="column green">col-sm-12</div>
+                </div>
+                <div class="row">
+                    <div class="column col-sm-1 blue-light-1">col-sm1</div>
+                    <div class="column col-sm-11 green">col-sm-11</div>
+                </div>
+                <div class="row">
+                    <div class="column col-sm-2 blue-light-1">col-sm-2</div>
+                    <div class="column col-sm-10 green">col-sm-10</div>
+                </div>
+                <div class="row">
+                    <div class="column col-sm-3 blue-light-1">col-sm-3</div>
+                    <div class="column col-sm-9 green">col-sm-9</div>
+                </div>
+                <div class="row">
+                    <div class="column col-sm-4 blue-light-1">col-sm-4</div>
+                    <div class="column col-sm-8 green">col-sm-8</div>
+                </div>
+                <div class="row">
+                    <div class="column col-sm-5 blue-light-1">col-sm-5</div>
+                    <div class="column col-sm-7 green">col-sm-7</div>
+                </div>
+                <div class="row">
+                    <div class="column col-sm-6 blue-light-1">col-sm-6</div>
+                    <div class="column col-sm-6 green">col-sm-6</div>
+                </div>
+                <div class="row">
+                    <div class="column col-sm-7 blue-light-1">col-sm-7</div>
+                    <div class="column col-sm-5 green">col-sm-5</div>
+                </div>
+                <div class="row">
+                    <div class="column col-sm-8 blue-light-1">col-sm-8</div>
+                    <div class="column col-sm-4 green">col-sm-4</div>
+                </div>
+                <div class="row">
+                    <div class="column col-sm-9 blue-light-1">col-sm-9</div>
+                    <div class="column col-sm-3 green">col-sm-3</div>
+                </div>
+                <div class="row">
+                    <div class="column col-sm-10 blue-light-1">col-sm-10</div>
+                    <div class="column col-sm-2 green">col-sm-2</div>
+                </div>
+                <div class="row">
+                    <div class="column col-sm-11 blue-light-1">col-sm-11</div>
+                    <div class="column col-sm-1 green">col-sm-1</div>
+                </div>
+                <div class="row">
+                    <div class="column blue-light-1">col-sm-12</div>
+                </div>
+                <div class="row">
+                    <div class="column col-sm-2 blue-light-1">col-sm-2</div>
+                    <div class="column col-sm-5 green">col-sm-5</div>
+                    <div class="column col-sm-2 blue-light-1">col-sm-2</div>
+                    <div class="column col-sm-3 green">col-sm-3</div>
+                </div>
+
+            </div>
         </div>
-        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
-            <h2>Modal</h2> 
-            <p>Utilise un input checkbox</p>
-            <p>Par défault la checkbox est unchecked, lorsqu'elle est cochée la modal est activée et apparaît à l'écran.</p>
-            <p>Pour la faire disparaître il suffit de clicker sur un bouton ou de clicker n'importe où en dehors de la modal. 
-                Le bouton ainsi que l'extérieur de la modal utilise des balises <label> pour décocher la checkbox. 
-            </p>
-            <p>Du JavaScript est utilisé pour ajouter un <span>overflow:hidden</span> à l'élément <body> afin de désactiver le scroll dans la page.</p>
+
+        <div class="step box" data-x="2000" data-y="6000" data-z="-2000" data-rotate="90">
+            <svg width="800" height="100">
+                <polygon points="800,100 800,0 0,0" class="triangle">
+            </svg>
+            <div class="box-header row">
+                <h2 class="col-md-9">
+                    Modal</h2>
+                <p class="col-md-3">Formation Sass</p>
+            </div>
+
+            <div class="box-body">
+
+                <p>Utilise un input checkbox</p>
+                <p>Par défault la checkbox est unchecked, lorsqu'elle est cochée la modal est activée et apparaît à l'écran.</p>
+                <p>Pour la faire disparaître il suffit de clicker sur un bouton ou de clicker n'importe où en dehors de la modal.
+                    Le bouton ainsi que l'extérieur de la modal utilise des balises &lt;label&gt; pour décocher la checkbox.
+                </p>
+                <p>Du JavaScript est utilisé pour ajouter un
+                    <span>overflow:hidden</span> à l'élément &lt;body&gt; afin de désactiver le scroll dans la page.
+                </p>
+
+                <label for="toggle-modal-checkbox" class="btn_modal-open">
+                    Activate Modal
+                </label>
+
+                <!-- Modal Checkbox -->
+                <div class="modalCheckbox" aria-hidden="true">
+                    <input id="toggle-modal-checkbox" type="checkbox" class="modal-input">
+                    <label for="toggle-modal-checkbox" class="modal-overlay"></label>
+                    <div class="modal-dialog">
+                        <div class="modal-header">
+                            <label for="toggle-modal-checkbox" class="btn-modal_close">x</label>
+                            <h2>Modal Header</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal Body</p>
+                        </div>
+                        <div class="modal-footer">
+                            <p>Modal Footer</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
-            <h2>Collapse</h2> 
-            <p>Utilise un input checkbox</p>
-            <p>Par défault la checkbox est unchecked, lorsqu'elle est cochée l'élément se décollapse.</p>
-            <p>Malheureusement pas possible de faire interragir les éléments collapse entre eux sans JavaScript</p>
+
+
+        <div class="step box" data-x="1000" data-y="7000" data-z="-2000" data-rotate="180">
+            <svg width="800" height="100">
+                <polygon points="800,100 800,0 0,0" class="triangle">
+            </svg>
+            <div class="box-header row">
+                <h2 class="col-md-9">Collapse</h2>
+                <p class="col-md-3">Formation Sass</p>
+            </div>
+
+            <div class="box-body">
+
+                <p>Utilise un input checkbox</p>
+                <p>Par défault la checkbox est unchecked, lorsqu'elle est cochée l'élément se décollapse.</p>
+                <p>Malheureusement pas possible de faire interragir les éléments collapse entre eux sans JavaScript</p>
+
+                <input id="collapse1" class="collapse-input" type="checkbox" class="modal-input">
+                <label class="collapse-btn" for="collapse1">
+                    <p class="collapse-btn_content">Collapse button</p>
+                    <div class="iconPlus">
+                        <span class="plus"></span>
+                        <span class="minus"></span>
+                    </div>
+                </label>
+                <div class="collapse-content">
+                    <p>Collapse content</p>
+                </div>
+
+            </div>
         </div>
-        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
-            <h2>Tab</h2> 
-            <p>Utilise un input radio</p>
-            <p>Par défault l'input radio est unchecked, lorsqu'il est coché l'élément tab apparaît.</p>
-            <p>L'input radio du premier élément est coché par défault.</p>
+
+        <div class="step box" data-x="0" data-y="6000" data-z="-2000" data-rotate="270">
+            <svg width="800" height="100">
+                <polygon points="800,100 800,0 0,0" class="triangle">
+            </svg>
+            <div class="box-header row">
+                <h2 class="col-md-9">Tab</h2>
+                <p class="col-md-3">Formation Sass</p>
+            </div>
+
+            <div class="box-body">
+
+                <p>Utilise un input radio</p>
+                <p>Par défault l'input radio est unchecked, lorsqu'il est coché l'élément tab apparaît.</p>
+                <p>L'input radio du premier élément est coché par défault.</p>
+
+
+                <div class="tab-container">
+                    <div class="tab-label">
+                        <input type="radio" id="tab1" class="tab-input" name="tab" checked="checked">
+                        <label for="tab1" class="tab-btn">Tab 1</label>
+                        <div class="tab-content">
+                            <p>Some text 1</p>
+                        </div>
+                    </div>
+                    <div class="tab-label">
+                        <input type="radio" id="tab2" class="tab-input" name="tab">
+                        <label for="tab2" class="tab-btn">Tab 2</label>
+                        <div class="tab-content">
+                            <p>Some text 2</p>
+                        </div>
+                    </div>
+                    <div class="tab-label">
+                        <input type="radio" id="tab3" class="tab-input" name="tab">
+                        <label for="tab3" class="tab-btn">Tab 3</label>
+                        <div class="tab-content">
+                            <p>Some text 3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
-            <h2>DRY</h2> 
-            <p>Don't Repeat Yourself</p>  
-            <p></p>
-        </div>
-        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
-            <h2>Nouvelles fonctionnalités</h2> 
-            <p>Slider</p>  
+
+
+        <!-- <div class="step box" data-x="1000" data-y="1000" data-z="-1000">
+            <h2>Nouvelles fonctionnalités</h2>
+            <p>Slider</p>
             <p>...</p>
+        </div> -->
+
+        <!-- <div class="step box" data-x="2000" data-y="0" data-z="-5000">
+            <svg width="800" height="100">
+                <polygon points="800,100 800,0 0,0" class="triangle">
+            </svg>
+            <div class="box-header row">
+                <h2 class="col-md-9">Nommage</h2>
+                <p class="col-md-3">Formation Sass</p>
+            </div>
+
+            <div class="box-body">
+                <p>Méthode BEM</p>
+                <p>Block - Element - Modifier</p>
+            </div>
+        </div> -->
+
+        <div class="step box" data-x="3000" data-y="1000" data-z="-4000" data-rotate="90">
+            <svg width="800" height="100">
+                <polygon points="800,100 800,0 0,0" class="triangle">
+            </svg>
+            <div class="box-header row">
+                <h2 class="col-md-9">Liens</h2>
+                <p class="col-md-3">Formation Sass</p>
+            </div>
+
+            <div class="box-body">
+                <p>Nommage</p>
+                <a href="http://getbem.com/" target="_blank">Méthode BEM</a>
+                <a href="https://smacss.com/" target="_blank">Méthode SMACSS</a>
+                <p>Sass</p>
+                <a href="http://sass-lang.com/" target="_blank">Sass site officiel</a>
+                <a href="https://la-cascade.io/se-lancer-dans-sass/" target="_blank">Tuto</a>
+                <a href="https://www.codecademy.com/learn/learn-sass" target="_blank">Code Academy</a>
+                <a href="https://www.codeschool.com/courses/assembling-sass" target="_blank">Code School</a>
+                <p>Librairie Companeo</p>
+                <a href="https://github.com/Borny/Sass-library/tree/master/customLibrary" target="_blank">Librairie Companeo | GitHub</a>
+
+            </div>
         </div>
-        <div class="step box" data-x="1000" data-y="1000" data-z="-1000"> 
-            <h2>Nommage des classes</h2> 
-            <p>Méthode BEM</p>  
-            <p>Block - Element - Modifier</p>
+
+        <div class="step box" data-x="0" data-y="2000" data-z="7000" data-rotate="360">
+            <svg width="800" height="100">
+                <polygon points="800,100 800,0 0,0" class="triangle">
+            </svg>
+            <div class="box-header row">
+                <h2 class="col-md-9"></h2>
+                <p class="col-md-3">Formation Sass</p>
+            </div>
+
+            <div class="box-body">
+                <p class="thanx">Thank you for your attention!</p>
+            </div>
+
         </div>
-        <div class="step box" data-x="-1000" data-y="2000" data-z="1000"> 
-            <h2>Liens</h2> 
-            <a href="http://getbem.com/">Méthode BEM</a>
-            <a href="https://smacss.com/">Méthode SMACSS</a>
-            <p>Sass :</p>
-            <a href="http://sass-lang.com/">Sass site officiel</a>
-            <a href="https://www.codecademy.com/learn/learn-sass">Code Academy</a>
-        </div>   -->
+
     </div>
 
-   <script src="js/impress.js"></script>   
+    <script src="js/impress.js"></script>
     <script>
         impress().init();
     </script>
 
 </body>
+
 </html>

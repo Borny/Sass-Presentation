@@ -1,0 +1,106 @@
+// This file makes use of a checkbox as a collapse trigger,
+// which doesn't require JavaScript
+// The main drawback is that the uncollapsed elements don't collapse back when another one is open  
+
+// Collapse button element
+.collapse-btn {
+    min-height: 70px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: $white;
+    border-radius: 4px;
+    cursor: pointer;
+    @extend %transition;
+    &:hover,
+    &:focus{
+        background: lighten($blue, 40);
+    }
+    .collapse-btn_content {
+        position: relative;
+        margin: 0;
+        @include inlineBlock(middle);
+    }
+    .iconPlus {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        @extend %transition;
+        .plus {
+            display: block;
+            width: 4px;
+            height: 20px;
+            margin: 0 auto;
+            border-radius: 2px;
+            background: $blue;
+        }
+        .minus {
+            position: absolute;
+            display: inline-block;
+            width: 20px;
+            height: 4px;
+            top: 8px;
+            border-radius: 2px;
+            background: $blue;
+            @extend %transition;
+        }
+    }
+}
+
+// Collapse checkbox
+.collapse-input {
+    display: none;
+
+    // Checkbox in checked state
+    &:checked {
+        ~ .collapse-btn {
+            .iconPlus {
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+            .minus {
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+        }
+        ~ .collapse-content {
+            position: relative;
+            visibility: visible;
+            max-height: 100%;
+            opacity: 1;
+            .row{
+                height: 100%;
+                div{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+// Collapse content
+.collapse-content {
+    @include animate;
+    position: absolute;
+    visibility: hidden;
+    max-height: 0;
+    opacity: 0;
+    margin: 20px 15px 0;
+    .modal-header{
+        color: $white;
+    }
+    .row{
+        @include animate;
+        height:0;
+        div{
+            @include animate;
+            height: 0;
+        }
+    }
+}

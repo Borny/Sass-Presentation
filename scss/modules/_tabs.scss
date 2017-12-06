@@ -1,0 +1,58 @@
+// Tab container
+.tab-container{
+    position: relative;
+}
+.tab-label {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 200px;
+}
+
+// Tab button
+.tab-btn {
+    display: block;
+    background: $blue;
+    padding: 20px;
+    color: $white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: $blue;
+    text-align: center;
+    color: $white;
+    font-weight: bold;
+    &:hover,
+    &:focus {
+        background: $blue-light;
+        cursor: pointer;
+    }
+    &:active {
+        background: $blue-dark-3;
+    }
+}
+
+// Tab content
+.tab-content {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    padding: 15px;
+    background: $blue-dark-3;
+    color: $white;
+}
+
+// Tab radio input
+.tab-input {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    &:checked {
+        ~ .tab-btn {
+            background: $blue-dark-3;
+        }
+        ~ .tab-content {
+            display: block;
+        }
+    }
+}

@@ -8,18 +8,12 @@
 @import 'base/normalize';
 @import 'base/base';
 
+// MODULES
+@import 'modules/collapse';
+@import 'modules/modal';
+@import 'modules/tabs';
+
 // COMPONENTS
 @import 'components/components';
 
-.box{
-    width: 1200px;
-    height: 800px;
-    background: $white;
-    border-radius: 4px;
-    box-shadow: 0 0 10px 0px $black-opacity7;
-    padding: 15px;
-}
 
-.upside-down{
-    transform: rotate(180deg);
-}

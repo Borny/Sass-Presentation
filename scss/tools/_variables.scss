@@ -1,8 +1,8 @@
 ////////////////
 // FONT FAMILY
 ////////////////
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-$font-family-roboto: 'Roboto', Arial, sans-serif, serif, Helvetica;
+@import url('https://fonts.googleapis.com/css?family=Lato');
+$font-family-roboto: 'Lato', Arial, sans-serif, serif, Helvetica;
 
 //////////
 // COLORS
@@ -13,6 +13,8 @@ $black: #000;
 $orange-light: #F9A33D;
 $orange: #F89827; //OFFICIAL COMPANEO ORANGE
 $orange-dark: #EA8A2A;
+
+$green: #0CC39D;
 
 $red: #FC5E71;
 
@@ -107,29 +109,12 @@ $font-size-xxl: 30px;
 $font-size-xxxl: 32px;
 
 ////////////
-// Z-INDEX
+// Z-index
 ////////////
-$zindex-footer: 100;
-$zindex-progressBar: 150;
-$zindex-btnContainerDesktop: 250;
-$zindex-halo: 300;
-$zindex-btn: 350;
-$zindex-btnImg: 400;
-$zindex-scrollArrow: 450;
-$zindex_disconnected: 660;
-$zindex-loader: 650;
-$zindex-cgu: 500;
-$zindex-btnContainerMobile: 500;
-$zindex-geoText: 400;
-$zindex-labelTop: 600;
-$zindex-modalApi: 900;
-$zindex-modalApiDialog: 950;
-$zindex-infoLayout: 1000;
-$zindex-headerFixed: 1050;
-$zindex-infoLayoutBody: 1100;
-$zindex-infoLayoutHeader: 1150;
-$zindex-cookie-widget: 1200;
-$zindex-modal-show: 1300;
+$zindex-nav-overlay: 100;
+$zindex-nav-dialog: 150;
+$zindex-modal-overlay: 200;
+$zindex-modal-dialog: 250;
 
 /////////////////
 // SCREEN SIZES
