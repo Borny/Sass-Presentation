@@ -64,35 +64,6 @@
     a {
         color: $blue;
         display: block;
-    } // collapse btn
-    .collapse-btn {
-        margin: 20px auto 0;
-        background: $blue;
-        color: $white;
-        width: 500px;
-        padding: 20px;
-        display: block;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        .iconPlus {
-            float: right;
-            margin: 5px 0 0;
-            .plus {
-                background: $white;
-            }
-            .minus {
-                background: $white;
-            }
-        }
-    }
-    .collapse-content{
-        margin: 0 auto;
-        width: 500px;
-        background: $white;
-        padding: 40px;
-        display: block;
-        border: 5px solid $blue;
-        position: relative;
     }
 }
 
@@ -116,4 +87,37 @@
     text-align: center;
     font-size: 4em;
     margin: 160px 0 0;
+}
+
+.collapse-demo {
+    // collapse btn
+    .collapse-btn {
+        margin: 20px auto 0;
+        background: $blue;
+        color: $white;
+        width: 500px;
+        padding: 20px;
+        display: block;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        .iconPlus {
+            float: right;
+            margin: 5px 0 0;
+            .plus {
+                background: $white;
+            }
+            .minus {
+                background: $white;
+            }
+        }
+    }
+    .collapse-content {
+        margin: 0 auto;
+        width: 500px;
+        background: $white;
+        padding: 40px;
+        display: block;
+        border: 5px solid $blue;
+        position: relative;
+    }
 }
